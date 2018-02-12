@@ -1,0 +1,49 @@
+#evaluations .labelInput{ font-weight: bold; text-align: left; border-bottom: 1px solid #eee; border-top: 1px solid #eee; padding:7px 0; font-size: 15px;}
+
+#evaluations .item{
+	margin-bottom: 20px;
+}
+
+/*resumé*/
+#resumeMatch{
+	background: url("../img/bgResumeMatch.png") no-repeat;
+	border-radius: 4px;
+	color:#fff;
+	padding:20px;
+}
+
+/*gauche*/
+#resumeMatch #resume{}
+
+#resumeMatch #resume p{
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+/*droit*/
+#resumeMatch #match{	
+	text-align: center;
+}
+
+#resumeMatch #match .versus{
+	background: #eee;
+	color: #333;
+	padding: 15px;
+	border-radius:4px;
+	font-weight: bold;
+	margin-top:35%;
+	font-size: 22px;
+}
+
+#resumeMatch #match img{
+	height:75px;
+}
+
+#resumeMatch #match .equipeNom{
+	font-size: 12px;
+	margin-bottom: 0;
+}
+#resumeMatch #match .infoMatch{
+	font-size: 12px;
+	margin-top:0 
+}

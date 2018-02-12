@@ -1,0 +1,50 @@
+@import url("matchs.css");
+@import url("ficheMatch.css");
+@import url("critique.css");
+
+body{
+	background: url("../img/pattern.png") repeat !important;
+}
+
+#containerCommun{
+	margin-top:30px;
+	background: #fff;
+	padding:15px;
+	border-radius: 4px;
+	border:1px solid #ccc;
+}
+
+
+/*
+** Header
+*/
+#header{
+	background: #353535 !important;
+	padding: 10px 0;
+}
+
+/*
+** Custom title
+*/
+.customTitre{
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	border: none;
+	-o-text-overflow: clip;
+	text-overflow: clip;
+	background: #fbad18;
+	-webkit-transform: skewX(-30deg);
+	transform: skewX(-30deg);
+	padding: 10px 0 5px 20px;
+	margin-left: 10px;
+	margin-right : 10px;
+	margin-bottom:30px;
+}
+
+.customTitre h1, .customTitre h2,.customTitre h3,.customTitre h4,.customTitre h5,.customTitre h6{
+	transform: skew(30deg);
+	font-size:18px;
+	color:#fff;
+	font-weight: bold;
+}

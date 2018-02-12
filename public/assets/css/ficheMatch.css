@@ -1,0 +1,404 @@
+/*
+** Score table
+*/
+#scoreTable{
+	color:#fff;
+	margin-top:30px;
+}
+
+/*
+** Score table header
+*/
+#scoreTable #header{
+	background: #353535 !important;
+	position:relative;
+	border-radius: 5px 5px 0 0;
+	border-bottom:1px solid #515151;
+	padding:20px 15px;
+}
+#scoreTable #header p{
+	font-weight: bold;
+	font-size: 14px;
+	margin:0;
+}
+#scoreTable #header p.debutMatch{
+	text-align: right;
+}
+
+#scoreTable #header .equipes{
+	position: absolute;
+	top:-20px;
+	left:0;
+	right: 0;
+	background: #fff;
+	color:#333;
+	padding:20px 30px;
+	border-radius: 0 0 15px 15px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+/*
+** Score table content
+*/
+#scoreTable #content{
+	background: url("../img/scoreTableBg.png") no-repeat;
+	max-height: 280px;	
+}
+#scoreTable .equipeDomicile, .equipeExterieur{
+	padding:20px 0;
+	text-align: center;
+}
+#scoreTable .equipeDomicile ul, .equipeExterieur ul{
+	margin-top: 10px;
+	list-style: none;
+	padding-left:0;
+}
+#scoreTable .equipeDomicile ul li, .equipeExterieur ul li{
+	font-size: 12px;
+	color: #f9f9f9;
+}
+.score{
+	background: #fff;
+	border-radius:10px;
+	padding:20px;
+	margin-top: 50px;
+	text-align: center;
+}
+.score p{
+	display: inline;
+	font-size: 80px;
+	font-weight: bold;
+	color:#353535;
+	margin-bottom: 0;
+}
+.score p:first-of-type{
+	border-right:1px solid #ddd;
+	padding-right:60px;
+}
+.score p:last-of-type{
+	padding-left: 60px;
+}
+
+.matchStatus{
+	margin-top: 10px;
+	text-align: center;
+	color:#f9f9f9;
+	font-size: 14px;
+}
+.matchStatus .live  {
+	margin-top: 15px;
+	font-weight: bold;
+}
+.matchStatus .live span {
+	display: inline-block;
+	background: #ee4142;
+	width: 12px;
+	height: 12px;
+	margin-right:7px;
+}
+
+/*
+** Score table footer
+*/
+#scoreTable #footer{
+	background: #353535;
+	border-radius:0 0 5px 5px;
+	border-top:1px solid #515151;
+	padding:25px;
+}
+#scoreTable #footer .championnat{
+	text-align: center;
+	margin-top: -37px;
+	font-size: 15px;
+}
+#scoreTable #footer .championnat p{
+	background: #353535;
+	display: inline-block;
+	color:#f9f9f9;
+	width:auto;
+	padding:0 20px;
+}
+
+#scoreTable #footer .tempsInitial p, .tempsFin p{
+	margin-bottom: 0;
+}
+#scoreTable #footer .tempsInitial{
+	float:right;
+}
+#scoreTable #footer .progress{
+	margin-top:5px;
+}
+#scoreTable #footer .tempsFin{
+	float:left;
+}
+
+
+/*
+** Fiche match content
+*/
+#ficheMatchContent{
+	margin-top:30px;
+}
+
+/*
+** Fiche match nav
+*/
+#ficheMatchContent .ficheMatchHeader{
+	display: block;
+	background: #353535;
+	border-radius:5px 5px 0 0;
+	border:1px solid #000;
+	height:66px;
+}
+
+#ficheMatchContent .ficheMatchHeader ul{
+	display: inline-block;
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+#ficheMatchContent .ficheMatchHeader ul li{
+	float:left;
+	padding:20px;
+	border-right:1px solid #000;
+}
+#ficheMatchContent .ficheMatchHeader ul li a{
+	color:#fff;
+	font-weight: bold;
+	font-size: 14px;
+}
+#ficheMatchContent .ficheMatchHeader ul li a.active{
+	color:#fbad18;
+}
+#ficheMatchContent .btnAjoutCritique{
+	display: inline;
+	float:right;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+
+
+/*
+** Fiche match content
+*/
+#ficheMatchContent .conteneur{
+	background: #fff;
+	padding:20px;
+	border:1px solid #cccccc;
+}
+#ficheMatchContent .conteneur .tab{
+	display: none;
+}
+#ficheMatchContent .conteneur .tab:first-of-type{
+	display: block;
+}
+
+/*
+** Fiche match tab critique
+*/
+#critiques{
+	display:flow-root;
+
+}
+
+.critique{
+	position:relative;
+	background: #f9f9f9;
+	border:1px solid #eee;
+	padding:15px;
+	float:left;
+	width:100%;
+}
+.critique:first-of-type{
+	border-radius:10px 10px 0 0;
+}
+.critique:first-of-type .badgeEquipe{
+	border-radius:0 10px 0 10px;
+}
+
+.critique .badgeEquipe{
+	position:absolute;
+	top:0;
+	right:0;
+	background: #fbad18;
+	border-radius: 0 0 0 10px;
+	padding: 2px 20px;
+	color:#fff;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.critique .vote{
+	float:left;
+}
+.critique .vote .nbVote{
+	font-weight: bold;
+	color:#333;
+	margin:8px 0;
+}
+.critique .vote .ratingUp{
+	background: #33cc00;
+}
+.critique .vote .ratingDown{
+	background: #cc3333;
+}
+.critique .vote .upGris{
+	background: url("../img/upGris.png") no-repeat;
+	width:27px;
+	height: 14px;
+	display:block;
+}
+.critique .vote .downGris{
+	background: url("../img/downGris.png") no-repeat;
+	width:27px;
+	height: 14px;
+	display:block;
+}
+.critique .vote .upVert{
+	background: url("../img/upVert.png") no-repeat;
+	width:27px;
+	height: 14px;
+	display:block;
+}
+.critique .vote .downRouge{
+	background: url("../img/downRouge.png") no-repeat;
+	width:27px;
+	height: 14px;
+	display:block;
+}
+
+.critique .imgType{
+	float:left;
+	margin: 0 20px;
+}
+.critique h3 {
+	margin:0;
+}
+.critique h3 a{
+	font-size: 20px;
+	font-weight: bold;
+	color:#333;
+}
+
+.critique .thumb{
+	display: block;
+}
+
+.critique .info{}
+.critique .info p{
+	margin-top:10px;
+	margin-bottom: 0;
+	font-size: 13px;
+}
+
+
+/*
+** Fiche match tab formation
+*/
+#lesFormationEquipes{}
+#lesFormationEquipes .terrain{
+	background: #333;
+	padding:20px 0;
+	text-align: center;
+	border-radius:10px;
+	margin-bottom: 30px;
+}
+
+.listeJoueurs{}
+.listeJoueurs .joueur{
+	padding:7px 0;
+	border-bottom: 1px solid #eee;
+}
+.listeJoueurs .joueur:hover{
+	background:#efeff2;
+	border-radius:5px;
+	cursor:pointer;
+}
+.listeJoueurs .joueur .numero{
+	font-weight: bold;
+	font-size: 22px;
+	margin-bottom: 0;
+	padding-left:10px;
+}
+.listeJoueurs .joueur .nom{
+	text-align: center;	
+	margin-bottom: 0;
+	padding-top:4px;
+}
+.listeJoueurs .joueur .image{
+	height:32px;
+	float:right;
+	padding-right:10px;
+}
+
+.exterieur {}
+.exterieur .image{
+	float:left !important;
+	padding-left:10px;
+}
+.exterieur .numero{
+	float:right;	
+	padding-right:10px;
+}
+
+
+/*
+** Modal box
+*/
+#modalAjouterCritique{}
+#modalAjouterCritique .customTitre{ width:100%; margin-bottom: 0; }
+#modalAjouterCritique .description{}
+#modalAjouterCritique .labelInput{ font-weight: bold; text-align: left; border-bottom: 1px solid #eee; border-top: 1px solid #eee; padding:7px 0;}
+
+
+/* item catégorie critique (arbitre, joueur selectionneur ...) */
+#selectCritiqueType{}
+#selectCritiqueType a{
+	float:left;
+	width:100%;
+	background:#f9f9f9;
+	border-radius: 10px;
+	border:1px solid #ccc;
+	text-align: center;
+	padding: 35px 0;
+	margin-bottom: 5px;
+}
+#selectCritiqueType a.selected{
+	background: #fbad18;
+}
+#selectCritiqueType .labelType{
+	text-align: center;
+	font-weight: bold;
+
+}
+
+/* selectJoueur */
+#selectJoueur{}
+#selectJoueur .itemsBox{
+	padding-bottom:10px;
+}
+#selectJoueur .categorieJoueur{
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+	padding:7px 0;
+    font-weight: bold;
+}
+#selectJoueur a{
+	float:left;
+	width:100%;
+	background:#f9f9f9;
+	border-radius: 10px;
+	border:1px solid #ccc;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 5px;
+}
+#selectJoueur a.selected{
+	background: #fbad18;
+}
+
+/*evaluer*/
+#evaluer .item {
+	margin-bottom: 20px;
+}

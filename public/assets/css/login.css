@@ -1,0 +1,48 @@
+@import  url("style.css");
+
+#loginPage{
+	background: #fff;
+	border:1px solid #ccc;
+	border-radius:10px;
+	padding:20px;
+}
+
+.logo{
+  padding: 70px 0 20px 0;
+  text-align: center;
+}
+
+.loginContainer{}
+
+.passwordRecoveryContainer{
+	display:none;
+}
+
+.facebookConnect{
+	text-align: center;
+}
+
+.separateur {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  color:#ccc;
+  margin:15px 0;
+}
+
+.separateur:after,
+.separateur:before {
+    content: "";
+    display: block;
+    background: #ddd;
+    width: 50%;
+    height:1px;
+}
+
+.separateur:after{
+	margin-left:10px;
+}
+
+.separateur:before{
+	margin-right:10px;
+}
